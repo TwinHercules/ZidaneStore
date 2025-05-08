@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZDN STORE</title>
+    <link rel="stylesheet" href="" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/e4ca1991ae.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="bg-white shadow-xl text-['Poppins'] sticky top-0 z-50">
+      <div class="mx-15 flex justify-between items-center text-black max-sm:mx-0 max-sm:me-5">
+        <div class="flex">
+          <div class="img flex justify-center items-center size-25">
+            <img src="img/LOGO REMOVE.png" alt="" />
+          </div>
+          <div class="flex justify-center items-center font-bold">
+            <p class="text-2xl">Zidane Store</p>
+          </div>
+        </div>
+        <div class="nav flex justify-between items-center gap-10 max-lg:hidden">
+          <p><a href="#layanan">Layanan</a></p>
+          <p><a href="#berlangganan">Cara Berlangganan</a></p>
+          <p><a href="#kendala">Laporan Kendala</a></p>
+        </div>
+        <div class="text-2xl min-lg:hidden" onclick="openPop(event)">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hidden fixed inset-0 z-50">
+      <div class="flex flex-col gap-4 bg-blue-600/70 py-5 mx-auto px-10 w-auto">
+        <div class="text-end text-5xl" onclick="closePop(event)">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="nav flex justify-between items-center flex-col gap-5 text-white">
+          <p><a href="#layanan">Layanan</a></p>
+          <p><a href="#berlangganan">Cara Berlangganan</a></p>
+          <p><a href="#kendala">Laporan Kendala</a></p>
+        </div>
+      </div>
+    </div>
+
+    <section class="bg-gradient-to-b from-blue-200 to-blue-500 py-20 max-sm:py-10">
+      <div class="mx-15 flex justify-between max-sm:flex-wrap-reverse max-sm:mx-5">
+        <div class="flex flex-col text-start justify-center gap-5 text-white">
+          <h1 class="font-bold text-5xl leading-[1.2] max-sm:text-3xl">Zidane Store Layanan Akun Canva Premium</h1>
+          <p class="text-xl max-sm:text-lg">Langsung cek layanan di website kami sekarang juga!</p>
+          <div class="flex justify-center items-center bg-blue-500 w-50 py-5 text-white rounded-4xl font-bold hover:bg-blue-600">
+            <a href="">Lihat Layanan</a>
+          </div>
+        </div>
+        <div class="img flex justify-center items-center size-100 w-230">
+          <img src="img/img-1.webp" alt="" class="w-auto h-auto" />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="mx-15 max-sm:mx-5">
+        <h1 class="text-center py-10 font-bold text-4xl text-gray-700 max-sm:text-2xl">Manfaat Yang Bisa Kamu Dapatkan</h1>
+        <div class="flex justify-center gap-10 max-sm:flex-wrap">
+          <div class="flex flex-col justify-center items-end gap-5 W-70">
+            <div class="border-r-2 border-gray-600 px-2">
+              <p class="font-semibold text-xl text-gray-600">Hemat hingga 70%</p>
+            </div>
+            <div class="border-r-2 border-gray-600 px-2">
+              <p class="font-semibold text-xl text-gray-600">Privasi Terjamin</p>
+            </div>
+            <div class="border-r-2 border-gray-600 px-2">
+              <p class="font-semibold text-xl text-gray-600">Customer Service Responsif</p>
+            </div>
+          </div>
+          <div class="flex justify-center items-center size-150 h-auto">
+            <img src="img/img-1.webp" alt="" />
+          </div>
+          <div class="flex flex-col justify-center items-start gap-5 w-70">
+            <div class="border-l-2 border-gray-600 px-2">
+              <p class="font-semibold text-xl text-gray-600">Layanan Legal dan Resmi</p>
+            </div>
+            <div class="border-l-2 border-gray-600 px-2">
+              <p class="font-semibold text-xl text-gray-600">Beragam Metode Pembayaran</p>
+            </div>
+            <div class="border-l-2 border-gray-600 px-2">
+              <p class="font-semibold text-xl text-gray-600">Layanan Cepat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-b from-white to-blue-500" id="layanan">
+      <div class="mx-15 py-30 max-sm:mx-5">
+        <div class="text-center font-bold text-4xl text-gray-700 pb-10 max-sm:text-2xl">
+          <h1>Pilih Paket Canva Sesuai Kebutuhanmu</h1>
+        </div>
+        <div class="flex gap-8 max-xl:flex-wrap max-xl:justify-center max-xl:items-center">
+          <div class="flex flex-col card w-100 border-2 rounded-2xl max-xl:max-w-100 border-white bg-white shadow">
+            <img src="img/canva.png" alt="" class="w-full h-40 object-cover rounded-2xl" />
+            <div class="flex flex-col justify-center items-center gap-5 p-2 text-center">
+              <h1 class="text-3xl font-bold py-2">Pro Lifetime</h1>
+              <p class="text-[0.9rem] min-h-20">
+                Akses Canva Pro seumur hidup, cukup bayar sekali tanpa perpanjangan. Cocok untuk kamu yang butuh fitur premium jangka panjang.
+              </p>
+              <div class="text-xl font-bold bg-blue-500 text-center py-2 px-10 rounded-xl text-white w-full hover:bg-blue-600">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=6286996589123&text=Halo+kak%2C+saya+mau+order+Canva+Pro-nya+%EF%BF%BD&type=phone_number&app_absent=0"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col card w-100 border-2 rounded-2xl max-xl:max-w-100 border-white bg-white shadow">
+            <img src="img/canva.png" alt="" class="w-full h-40 object-cover rounded-2xl" />
+            <div class="flex flex-col justify-center items-center gap-5 p-2 text-center">
+              <h1 class="text-3xl font-bold py-2">Pro 1 Tahun</h1>
+              <p class="text-[0.9rem] min-h-20">
+                Langganan Canva Pro selama 12 bulan penuh. Praktis, hemat, dan langsung aktif dalam hitungan menit.
+              </p>
+              <div class="text-xl font-bold bg-blue-500 text-center py-2 px-10 rounded-xl text-white w-full hover:bg-blue-600">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=6286996589123&text=Halo+kak%2C+saya+mau+order+Canva+Pro-nya+%EF%BF%BD&type=phone_number&app_absent=0"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col card w-100 border-2 rounded-2xl max-xl:max-w-100 border-white bg-white shadow">
+            <img src="img/canva.png" alt="" class="w-full h-40 object-cover rounded-2xl" />
+            <div class="flex flex-col justify-center items-center gap-5 p-2 text-center">
+              <h1 class="text-3xl font-bold py-2">Pro 6 Bulan</h1>
+              <p class="text-[0.9rem] min-h-20">
+                Dapatkan semua fitur Canva Pro selama 6 bulan. Solusi pas buat desain rutin dan proyek jangka menengah.
+              </p>
+              <div class="text-xl font-bold bg-blue-500 text-center py-2 px-10 rounded-xl text-white w-full hover:bg-blue-600">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=6286996589123&text=Halo+kak%2C+saya+mau+order+Canva+Pro-nya+%EF%BF%BD&type=phone_number&app_absent=0"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col card w-100 border-2 rounded-2xl max-xl:max-w-100 border-white bg-white shadow">
+            <img src="img/canva.png" alt="" class="w-full h-40 object-cover rounded-2xl" />
+            <div class="flex flex-col justify-center items-center gap-5 p-2 text-center">
+              <h1 class="text-3xl font-bold py-2">Pro 1 Bulan</h1>
+              <p class="text-[0.9rem] min-h-20">Coba semua fitur Canva Pro selama 30 hari. Ideal untuk kebutuhan desain cepat atau proyek singkat.</p>
+              <div class="text-xl font-bold bg-blue-500 text-center py-2 px-10 rounded-xl text-white w-full hover:bg-blue-600">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=6286996589123&text=Halo+kak%2C+saya+mau+order+Canva+Pro-nya+%EF%BF%BD&type=phone_number&app_absent=0"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white" id="berlangganan">
+      <div class="mx-15 pt-30 max-sm:mx-5">
+        <div class="flex flex-col gap-2 text-center">
+          <h1 class="font-bold text-4xl text-gray-800 max-sm:text-3xl">Cara Berlangganan</h1>
+          <p class="text-gray-800">Cara praktis berlangganan layanan premium</p>
+        </div>
+        <div class="flex justify-between items-center gap-10 py-30 max-lg:flex-wrap max-lg:justify-center">
+          <div class="flex flex-col justify-center items-center w-auto relative max-lg:h-40">
+            <div class="absolute -top-13">
+              <img src="img/pesan-layanan_1.webp" alt="" class="size-20" />
+            </div>
+            <div class="bg-blue-700 flex p-6 pt-10 gap-2 rounded-t-[5rem] w-40 rounded-b-md justify-center items-center">
+              <span class="flex justify-center items-center bg-white p-1 text-blue-700 rounded-full w-8">1</span>
+              <p class="text-white">Pesan Layanan</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center w-auto relative max-lg:h-40">
+            <div class="absolute -top-13">
+              <img src="img/pembayaran_1.webp" alt="" class="size-20" />
+            </div>
+            <div class="bg-blue-700 flex p-6 pt-10 gap-2 rounded-t-[5rem] w-40 rounded-b-md justify-center items-center">
+              <span class="flex justify-center items-center bg-white p-1 text-blue-700 rounded-full w-8">2</span>
+              <p class="text-white">Pembayaran</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center w-auto relative max-lg:h-40">
+            <div class="absolute -top-13">
+              <img src="img/menunggu-proses_1.webp" alt="" class="size-20" />
+            </div>
+            <div class="bg-blue-700 flex p-6 pt-10 gap-2 rounded-t-[5rem] w-40 rounded-b-md justify-center items-center">
+              <span class="flex justify-center items-center bg-white p-1 text-blue-700 rounded-full w-8">3</span>
+              <p class="text-white">Menunggu Proses</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center w-auto relative max-lg:h-40">
+            <div class="absolute -top-13">
+              <img src="img/pesanan-diterima_1.webp" alt="" class="size-20" />
+            </div>
+            <div class="bg-blue-700 flex p-6 pt-10 gap-2 rounded-t-[5rem] w-40 rounded-b-md justify-center items-center">
+              <span class="flex justify-center items-center bg-white p-1 text-blue-700 rounded-full w-8">4</span>
+              <p class="text-white">Pesanan Diterima</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center w-auto relative max-lg:h-40">
+            <div class="absolute -top-13">
+              <img src="img/selesai_1.webp" alt="" class="size-20" />
+            </div>
+            <div class="bg-blue-700 flex p-6 pt-10 gap-2 rounded-t-[5rem] w-40 rounded-b-md justify-center items-center">
+              <span class="flex justify-center items-center bg-white p-1 text-blue-700 rounded-full w-8">5</span>
+              <p class="text-white">Selesai</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kendala">
+      <div class="mx-15 py-20 max-sm:mx-5">
+        <div class="text-center text-gray-800 font-bold text-4xl py-5 max-sm:text-2xl">
+          <h1>Laporan Kendala</h1>
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="flex justify-center items-center gap-10 shadow-xl w-150 bg-gray-200 rounded-2xl p-10 max-sm:flex-col">
+            <div class="text-9xl">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="font-bold text-3xl">Zidane Store</p>
+              <p class="text-justify text-[0.9rem]">
+                Kami siap membantu setiap kendala yang kamu alami saat menggunakan layanan kami. Laporkan masalahmu secara langsung melalui WhatsApp,
+                dan tim kami akan segera menindaklanjutinya dengan cepat dan profesional.
+              </p>
+              <div class="bg-green-500 w-40 p-3 text-center text-white rounded-2xl hover:bg-green-600">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=6286996589123&text=Halo+kak%2C+saya+mau+order+Canva+Pro-nya+%EF%BF%BD&type=phone_number&app_absent=0"
+                  >Laporkan Kendala</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-blue-500">
+      <div class="mx-15 py-10 flex justify-between text-white max-lg:mx-5 max-md:flex-col max-lg:gap-8">
+        <div class="">
+          <img src="img/LOGO REMOVE WHITE.png" alt="" class="w-60" />
+        </div>
+        <div class="">
+          <div class="font-bold text-xl">
+            <h1>Produk</h1>
+          </div>
+          <div class="font-medium text-[1rem]">
+            <p><a href="#layanan" class="hover:text-gray-800">layanan</a></p>
+          </div>
+        </div>
+        <div class="">
+          <div class="font-bold text-xl">
+            <h1>Social Media</h1>
+          </div>
+          <div class="font-medium text-[1rem]">
+            <p>
+              <i class="fa-brands fa-instagram"></i
+              ><a href="https://www.instagram.com/canvapremium__zidane/" class="hover:text-gray-800"> Instagram</a>
+            </p>
+            <p>
+              <i class="fa-brands fa-tiktok"></i
+              ><a href="https://www.tiktok.com/@canvapremium__zidane?_t=ZS-8wBcpNv0Ggr&_r=1" class="hover:text-gray-800"> Tiktok</a>
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <div class="font-bold text-xl">
+            <h1>Hubungi Kami</h1>
+          </div>
+          <div class="font-medium text-[1rem]">
+            <p><i class="fa-solid fa-envelope"></i> <a href="" class="hover:text-gray-800"> zidanestore@gmail.com</a></p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <a
+                href="https://api.whatsapp.com/send/?phone=6286996589123&text=Halo+kak%2C+saya+mau+order+Canva+Pro-nya+%EF%BF%BD&type=phone_number&app_absent=0"
+                class="hover:text-gray-800"
+              >
+                +62 878-7217-6733</a
+              >
+            </p>
+            <p><i class="fa-solid fa-clock"></i><a href="" class="hover:text-gray-800"> Jam Operasional Setiap Hari 06.00 - 00.00 WIB</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
